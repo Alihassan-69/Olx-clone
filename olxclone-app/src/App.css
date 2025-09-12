@@ -1,0 +1,592 @@
+*{
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;     /* Desktop limit */
+  margin: 0 auto;        /* Center align */
+  padding: 0 16px;       /* Thoda gap dono sides */
+  width: 100%;           /* Full width on small screens */
+}
+
+/* OTP CSS DIVS */
+.otp-div{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: 180px;
+  grid-gap: 10px;
+  height: auto;
+  width: auto;
+  border: 3px solid;
+  border-radius: 16px ;
+  
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 85px;
+}
+.otp-div div{
+  margin: 10px;
+  background-color: white;
+  /* height: 160px;
+  width: 120px; */
+  /* border: 3px;
+  */
+  text-align: center;
+  justify-content: baseline;
+  color: black;
+  
+}
+
+.otp-div div input{
+    width: 115px;
+    height: 180px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 165px;
+    border-radius: 16px;
+    border: 3px solid;
+}
+
+/* Navbar CSS */
+  
+/* Navbar container */
+.bannerChildDiv {
+  margin-top: 70px;   /* header ki height ke equal rakho */
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+}
+
+/* Menubar row */
+.menubar {
+  display: flex;
+justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Select box */
+.menuBar select {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+/* Quick options horizontal row */
+.otherQuickOptions {
+  display: flex;
+  gap: 15px;
+
+}
+
+.otherQuickOptions span {
+  cursor: pointer;
+  color: #002f34;
+  font-size: 14px;
+}
+
+.otherQuickOptions span:hover {
+  text-decoration: underline;
+}
+
+/* Dynamic Post CSS */
+  .moreView {
+    padding: 16px 16px 32px;
+    background-color: #ebeeef;
+    border-radius: 4px;
+    width: 100%;
+    background-color: white;
+  }
+
+  .headingzz {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .heading :first-child {
+    font-size: 24px;
+    color: #002f34;
+  }
+  
+  .heading :last-child {
+    font-size: 14px;
+    color: #002f34;
+  }
+  
+  .moreView .cards {
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+
+  .headerParentDiv {
+    
+  padding: 10px;
+  background-color: white;
+  position: relative;
+  width: 100%;
+  z-index: 999;
+}
+
+.headerChildDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.placeSearch {
+  width: 16em;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  border: 2px solid #002f34;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.placeSearch ::selection {
+  border-color: #23e5db;
+  outline-color: #23e5db;
+}
+
+.placeSearch input {
+  border-color: transparent;
+  outline-color: transparent;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  .otherQuickOptions {
+    display: none;
+  }
+  .bannerChildDiv .banner {
+    position: relative;
+  }
+}
+
+
+
+
+
+
+/* Create ADD CSS */
+.centerDiv{
+   border: 1px solid black;
+    width: max-content;
+    padding: 50px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+}
+.input{
+  border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    outline-color: transparent;
+    margin-bottom:35px ;
+    background-color: transparent;
+}
+.uploadBtn {
+    margin-top: 30px;
+    width: 100%;
+    height: 48px;
+    /* border-color: transparent; */
+    background-color: #002f34;
+    color: whitesmoke;
+    font-weight: 900;
+  }
+  .uploadBtn:hover {
+    background-color: white;
+    color: #002f34;
+    border: 2px solid #002f34;
+  }
+  .centerDiv label{
+    font-weight: bold;
+  }
+
+  
+/* POST CArds CSS */
+.cards {
+    margin-right: 15px;
+    padding: 13px;
+    max-width: 222px;
+    width: 222px;
+    height: 270px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .cards .favorites {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .cards .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cards .images img {
+    height: 100px;
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    text-align: center;
+  }
+  .cards .contents .rates {
+    margin-top: 10px;
+    font-size: larger;
+    font-weight: bold;
+  }
+  .cards .contents .categorys {
+    font-size: medium;
+  }
+  .cards .contents .names {
+    font-size: small;
+  }
+  .cards .dates {
+    display: flex;
+    justify-content: flex-end;
+    font-size: small;
+  }
+  
+
+  /* Signup Page */
+
+
+
+  .signupParentDiv {
+    border: 1px solid black;
+    width: max-content;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+  }
+  
+  .signupParentDiv .inputd {
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    outline-color: transparent;
+    background-color:transparent;
+  }
+  
+  .signupParentDiv button {
+    width: 100%;
+    height: 48px;
+    background-color: #002f34;
+    color: whitesmoke;
+    font-weight: 900;
+  }
+  .signupParentDiv button:hover {
+    background-color: white;
+    color: #002f34;
+    border: 2px solid #002f34;
+  }
+  
+  .signupParentDiv a {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+    
+
+
+/* Header CSS */
+
+.headerParentDivs {
+  top: 0;
+  padding: 10px;
+  background-color: whitesmoke;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.headerChildDivs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.placeSearchs {
+  width: 16em;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  border: 2px solid #002f34;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.placeSearchs ::selection {
+  border-color: #23e5db;
+  outline-color: #23e5db;
+}
+
+.placeSearchs input {
+  border-color: transparent;
+  outline-color: transparent;
+}
+
+.productSearchs {
+  width: 35em;
+  height: 48px;
+  margin-left: 2em;
+  border-radius: 4px;
+  /* border: 2px solid #002f34; */
+  /* display: flex;
+  align-items: center; */
+  /* background-color: white; */
+  /* display: flex;
+  align-items: center; */
+  /* justify-content: space-between; */
+}
+
+/* .productSearch .input {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.productSearch .input input {
+  border-color: transparent;
+  outline-color: transparent;
+  width: 100%;
+  align-items: center;
+}
+
+.productSearch .searchAction {
+  min-width: 48px;
+  height: 48px;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  background-color: #002f34;
+  border-radius: 0 4px 4px 0;
+}
+
+.productSearch .searchAction svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: white;
+} */
+
+.language {
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.language span {
+  /* justify-content: space-between;
+  align-items: center; */
+  font-size: 15px;
+  white-space: normal;
+  text-overflow: ellipsis;
+  font-weight: bolder;
+  margin-right: 5px;
+}
+
+
+.spans {
+  text-decoration: none;
+  font-size: 16px;
+  white-space: normal;
+  text-overflow: ellipsis;
+  font-weight: bolder;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.loginPages hr {
+  margin: 0;
+  background-color: black;
+  height: 2px;
+}
+
+.loginPage a{
+  text-decoration: none;
+}
+
+.sellMenu {
+  position: relative;
+  cursor: pointer;
+}
+
+.sellMenu .all {
+  fill: white;
+}
+
+.sellMenu .top {
+  fill: #23e5db;
+}
+
+.sellMenu .left {
+  fill: #ffce32;
+}
+
+.sellMenu .right {
+  fill: #3a77ff;
+}
+.sellMenu .sellMenuContent {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #002f34;
+}
+
+/* .sellMenu .sellMenuContent svg {
+  align-items: center;
+} */
+.sellMenu .sellMenuContent .spans {
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+  .placeSearch,
+  .productSearch{
+    display: none;
+  }
+}
+.logout-span{
+  cursor: pointer;
+}
+
+.dataResult-header {
+    
+  position: absolute;
+  top: 60px;
+  left: 85px;
+   width: 16em;
+   height: 150px;
+   background-color: white;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   overflow: hidden;
+   overflow-y: auto;
+ }
+ 
+ /* .dataResult-header::-webkit-scrollbar {
+   display: none;
+ } */
+ 
+ .dataResult-header .dataItem-header {
+   width: 100%;
+   height: 30px;
+   display: flex;
+   align-items: center;
+   color: black;
+   font-size: smaller;
+ }
+ 
+ .dataItem-header p {
+   margin-left: 10px;
+ }
+
+ 
+ .dataResult-header  :hover {
+   background-color: #ebeeef;
+ }
+
+
+
+
+/* Paggination CSS */
+
+.pagination {
+  justify-content: center;
+  margin: 50px 0;
+}
+.pagination li {
+  color: #03080a;
+  font-weight: bolder;
+  width: 30px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 1px;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 8px;
+  transition: all ease 0.3s;
+  
+}
+.pagination li:hover {
+  background-color: rgb(106, 219, 200);;
+  border-color: #ebeeef;
+}
+.active {
+  background-color: rgb(7, 192, 216);
+}
+
+
+
+
+/* for responsive CSS */
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+  .headerChildDivs,
+  .menuBar,
+  .footerlist ul {
+    flex-wrap: wrap;   /* break into multiple lines */
+    gap: 20px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  .headerChildDivs {
+    flex-direction: column;  /* stack vertically */
+    align-items: flex-start;
+  }
+
+  .otherQuickOptions {
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .footerlist ul {
+    flex-direction: column; /* footer links stack vertically */
+    gap: 10px;
+  }
+
+  .placeSearchs, .productSearchs {
+    width: 100%;   
+  }
+}
+label {
+  color: black;
+}

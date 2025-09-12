@@ -1,0 +1,55 @@
+.FooterParentDiv {
+  width: 100%;
+  background: #ebeeef;
+}
+
+/* content ko row me rakhna */
+.FooterParentDiv .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 40px; /* space between columns */
+}
+
+/* heading style */
+.FooterParentDiv .headingz p,
+.FooterParentDiv .FooterHeading p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+/* footerlist ko horizontal banana */
+.FooterParentDiv .footerlist ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;            /* <-- horizontal */
+  gap: 20px;                /* spacing between li */
+  flex-wrap: wrap;          /* responsive wrap */
+}
+
+.FooterParentDiv .footerlist ul li {
+  color: #002f34;
+  cursor: pointer;
+}
+
+/* neeche wali strip */
+.FooterParentDiv .footer {
+  text-align: center;
+  background: #002f34;
+  color: whitesmoke;
+  padding: 10px;
+  font-size: 14px;
+}
+.para{
+    color:  #002f34;
+}
+
+.container {
+  max-width: 1200px;     /* Desktop limit */
+  margin: 0 auto;        /* Center align */
+  padding: 0 16px;       /* Thoda gap dono sides */
+  width: 100%;           /* Full width on small screens */
+}
