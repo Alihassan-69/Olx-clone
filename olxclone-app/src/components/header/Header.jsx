@@ -55,8 +55,8 @@ function Header(){
 
     return(
         <>  
-         <div className="headerParentDiv">
           <div className="container">
+         <div className="headerParentDiv">
 
       <div className="headerChildDiv">
 
@@ -101,11 +101,11 @@ function Header(){
           )}
           <hr />
         </div>
-        {user && (
-          <span onClick={logoutHandler} className="logout-span">
-            Logout
-          </span>
-        )}
+        {/* {user && (
+          //  <span onClick={logoutHandler} className="logout-span">
+          //   Logout
+          // </span>
+        )} */}
         
         <Link to="/create">
           {" "}

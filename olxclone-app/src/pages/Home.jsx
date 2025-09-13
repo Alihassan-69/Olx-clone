@@ -5,9 +5,10 @@ import Navbar from '../components/navbar/Navbar';
 
 import Posts from '../components/posts/Posts';
 import Footer from '../components/footer/Footer';
-import { AuthContext } from '../contextStore/AuthContext';
+import { AuthContext } from '../components/contextstore/AuthContext';
 
-function Home() {
+
+function Home(props) {
  const {setUser}=useContext(AuthContext)
   
   return (

@@ -1,6 +1,6 @@
 import React, { Fragment, useContext } from "react";
 import Create from "../components/create/Create.jsx";
-import { AuthContext } from "../contextstore/AuthContext.jsx";
+import { AuthContext } from "../components/contextstore/AuthContext.jsx";
 import Login from "../components/login/Login.jsx";
 
 const CreatePage = () => {

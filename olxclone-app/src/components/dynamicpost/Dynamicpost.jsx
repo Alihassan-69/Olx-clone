@@ -3,6 +3,7 @@ import {Allpostcontext} from "../contextstore/Allpostcontext.jsx" ;
 import PostCards from '../postcards/Postcards.jsx';
 import {Link} from "react-router-dom";
 import Postcards from "../postcards/Postcards.jsx";
+import Pagination from "../pagination/Pagination.jsx";  
 
 
 function DynamicPosts({category}) {
@@ -20,14 +21,14 @@ function DynamicPosts({category}) {
           <div className="container" >
         <div className="heading">
           <span>{category}</span>
-         <Link to="./viewmore">
           <span>View more</span> 
+         <Link to="./viewmore">
          </Link>
         </div> 
         <div className="cards">{displayCards}</div>
-        <Pagination/>
       </div>
         </div>
+        <Pagination/>
         </div> } 
         </>
    )

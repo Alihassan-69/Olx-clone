@@ -5,7 +5,8 @@ function Navbar(){
     let [Category, setCategory] = useState();
 
     return(
-        <>
+        
+            <div className="container">
         <div className="bannerChildDiv">
             <div className="menubar" >
                 <div className="menuBar" >
@@ -29,8 +30,9 @@ function Navbar(){
                 </div>
             </div>
             { Category!=null && <DynamicPosts category={Category}/>}
+            </div>
         </div>
-        </>
+        
     )
 }
 

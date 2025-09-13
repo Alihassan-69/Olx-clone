@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
-import { PostContext } from "../../contextStore/PostContext";
-import { useNavigate } from "react-router";
-import "./View.css";
+import { useNavigate } from "react-router-dom";
+import { PostContext } from "../../components/contextstore/PostContext";
+import "./view.css";
 function View() {
   let { postContent } = useContext(PostContext);
 

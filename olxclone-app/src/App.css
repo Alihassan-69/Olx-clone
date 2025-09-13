@@ -1,7 +1,7 @@
 *{
 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: white;
+  background-color: darkgray;
 }
 html, body {
   margin: 0;
@@ -30,10 +30,11 @@ html, body {
   padding: 20px;
   margin-top: 60px;
   font-size: 85px;
+  color: black;
 }
 .otp-div div{
   margin: 10px;
-  background-color: white;
+  background-color: black;
   /* height: 160px;
   width: 120px; */
   /* border: 3px;
